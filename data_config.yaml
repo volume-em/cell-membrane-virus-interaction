@@ -1,0 +1,47 @@
+# set the working directory that contains all input
+# and will contain all output files
+wdir: './membrane_curvature/'
+
+# file name for the mesh of the segmented cell
+mesh_fname: 'cell_0.8dec.stl'
+
+# a reference mesh that can be used to confine measurements
+# to the actual membrane of the cell, this is important when
+# some of the cell membrane is cutoff at the boundary of
+# the image volume. Generally this reference mesh will
+# be created from a simple thresholding of the image volume
+# to annotate the empty resin of a uniform intensity value.
+# if none of the cell is cutoff at the 
+# boundary of the image volume then this can be set to null
+ref_mesh_fname: 'resin_0.8dec.stl' #null
+
+# if the reference mesh for finding the surface to measure
+# curvature is of resin or not; generally this should remain True
+reference_is_resin: True
+
+# a slicer .fcsv markups file where each point
+# corresponds to a virus particle that was annotated
+# with a fiducial marker
+markups_fname: 'viruses.fcsv'
+
+# whether to deduplicate points in the markups
+dedupe: True
+# minimum distance between fiducials for them to be
+# considered as representing separate virus particles
+min_separation: 50
+
+# Slicer saves fiducial coordinates in the LPS
+# coordinate system while meshes generated in Slicer
+# use the RAS coordinate system; if mesh or fiducials
+# are generated in other software this may need to be False
+lps_to_ras: True
+
+# set parameters for calculating the mean curvature
+# at points on the surface.
+# curvature radius is in physical space of nanometers
+curvature_radius: 100
+
+# finally, the desired output filenames for the KDE plot
+# and the summary statistics csv
+kde_fname: 'Fig3C_cell1_0.2_curvature_kde.png'
+csv_fname: 'Fig3C_cell1_0.2_curvature_summary.csv'
