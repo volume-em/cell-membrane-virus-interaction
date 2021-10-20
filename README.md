@@ -15,7 +15,7 @@ The following python packages need to be installed before running the script (wi
 
 ## Raw Data
 
-Available from EMPIAR-10677.
+Available shortly from EMPIAR-10677.
 
 ## Running the Code
 
