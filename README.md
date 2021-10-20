@@ -21,8 +21,8 @@ Available from EMPIAR-10677.
 
 Example data is provided in the membrane_curvature directory. To run the script:
 
-'''
+```
 python surface_curvature.py data_config.yaml
-'''
+```
 
 All parameters needed for measurement, including filenames, are encapsulated in the .yaml config file. The yaml file contains detailed notes describing each parameter.
