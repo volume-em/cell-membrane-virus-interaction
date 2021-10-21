@@ -1,4 +1,4 @@
-# Virus-Cell Interaction
+# Cell Membrane-Virus Interaction
 
 Code for the paper [FIB-SEM as a Volume Electron Microscopy Approach to Study Cellular Architectures in SARS-CoV-2 and Other Viral Infections: A Practical Primer for a Virologist](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8066521/).
 
